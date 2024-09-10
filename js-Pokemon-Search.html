@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Search</title>
+
+  <link rel="stylesheet" href="./Pokemon-Search.css">
+  <style>
+    #pokemon-img {
+      width: 300px;
+      height: 300px;
+      object-fit: fill;
+      object-fit: contain;
+      object-fit: scale-down;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1>Pokemon Search</h1>
+
+    <form class="form">
+      <label class="search-label">
+        <span class="search-title">寶可夢編號/英文名稱</span>
+        <input class="search-input" type="search">
+      </label>
+      <button type="button" id="search-btn">搜尋</button>
+    </form>
+
+    <div>
+      <figure class="pokemon">
+        <img id="pokemon-img"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/25.gif"
+          alt="寶可夢圖片">
+        <figcaption id="pokemon-name">#25 Pikachu</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <script src="./Pokemon-Search.js"></script>
+</body>
+
+</html>
